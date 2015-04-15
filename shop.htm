@@ -1,0 +1,173 @@
+<!DOCTYPE html><html lang="en-US" dir="ltr"><!-- InstanceBegin template="/Templates/Shop.dwt" codeOutsideHTMLIsLocked="false" -->
+    <head>
+        <meta charset="UTF-8" />
+        <!-- InstanceBeginEditable name="doctitle" --><title></title><!-- InstanceEndEditable --><!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+        <link rel="stylesheet" type="text/css" href="/css/style.css" media="screen" />
+    </head>
+    <body>
+        <!-- Skip links -->
+        <div id="skip-links">
+        <strong>Skip links</strong>
+        <ul>
+            <li><a href="#nav">Skip to navigation</a></li>
+            <li><a href="#content">Skip to content</a></li>
+        </ul>
+        </div>
+        <div id="header-wrap">
+        <div id="header">
+        <!-- Site name -->
+        <a href="/" id="site-name" title="Go to homepage" rel="home">Site name</a>
+        <!-- Main navigation -->
+        <div id="nav">
+        <strong>Main navigation</strong>
+        {module_menu, 14623}
+        </div>
+        <!-- Search form -->
+        <form name="catsearchform91393" method="post" action="/Default.aspx?SiteSearchID=845&amp;PageID=5452353">
+            <fieldset>
+            <input type="text" class="cat_textbox_small" name="CAT_Search" id="CAT_Search" />
+            <input type="submit" class="cat_button" value="Search" />
+            </fieldset>
+        </form>
+        <div class="user-info">
+        <div class="cart-summary">{module_shoppingcartsummary}</div>
+        <div class="user">{module_whosloggedin,/member}</div>
+        </div>
+        </div>
+        </div>
+        <div class="container">
+        <div class="mid-column">
+        <div class="grid8 first">
+        <!-- InstanceBeginEditable name="ContentArea" --><h2>Shop</h2>
+{module_productfeaturelist,featured,6,date}
+<!-- InstanceEndEditable -->
+        </div>
+        <div class="grid4 widget-area">
+        <div class="sidebar">
+        <ul class="sidebar-inner">
+            <li class="widget-container">
+            <h3>Categories</h3>
+            <div>
+            {module_cataloguelistdump,-1}
+            </div>
+            </li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <div class="clear">&nbsp;</div>
+        </div>
+        <div class="clear">&nbsp;</div>
+        <div class="wrap bottom-wrap">
+        <div id="bottom">
+        <div class="grid3 first menu">
+        <div class="footerbox">
+        <h3>Site menu</h3>
+        {module_menu, 14623}
+        </div>
+        </div>
+        <div class="grid3 news">
+        <div class="footerbox">
+        <h3>Latest news</h3>
+        <ul>
+            {module_announcement,l,3}
+        </ul>
+        </div>
+        </div>
+        <div class="grid3">
+        <div class="footerbox">
+        <div class="newsletter-form">
+        <h3>Newsletter Sign-Up</h3>
+        <form name="catemaillistform77362" onsubmit="return checkWholeForm77362(this)" method="post" action="/CampaignProcess.aspx?ListID=23504">
+            <div class="form">
+            <div class="item">
+            <label for="CLFullName">Full Name</label><br />
+            <input type="text" class="cat_textbox_small" name="FullName" id="CLFullName" maxlength="255" />
+            </div>
+            <div class="item">
+            <label for="CLEmailAddress">Email Address</label><br />
+            <input type="text" class="cat_textbox_small" name="EmailAddress" id="CLEmailAddress" maxlength="255" />
+            </div>
+            <div class="item">
+            <label>Enter Word Verification in box below</label><br />
+            {module_captchav2}
+            </div>
+            <div class="item">
+            <input type="submit" class="cat_button" value="Subscribe" id="catlistbutton" />
+            </div>
+            </div>
+            <script type="text/javascript" src="/CatalystScripts/ValidationFunctions.js"></script>
+            <script type="text/javascript">
+						//<![CDATA[
+						function checkWholeForm77362(theForm){var why = "";if (theForm.EmailAddress) why += checkEmail(theForm.EmailAddress.value);if (theForm.CaptchaV2) why += isEmpty(theForm.CaptchaV2.value, "Enter Word Verification in box below"); if (why != ""){alert(why);return false;}theForm.submit();return false;}
+						//]]>
+						</script>
+        </form>
+        </div>
+        </div>
+        </div>
+        <div class="grid3">
+        <div class="footerbox">
+        <div class="secure-login">
+        <h3>Members Only Login <a href="/register">(Register for account)</a></h3>
+        <form name="catseczoneform99915" onsubmit="return checkWholeForm99915(this)" method="post" action="/ZoneProcess.aspx?ZoneID=51&amp;OID={module_oid}&amp;OTYPE={module_otype}">
+            <div class="form">
+            <div class="item">
+            <label for="SZUsername">Username</label>
+            <br />
+            <input type="text" class="cat_textbox_small" name="Username" id="SZUsername" maxlength="255" />
+            </div>
+            <div class="item">
+            <label for="SZPassword">Password</label>
+            <br />
+            <input type="password" class="cat_textbox_small" name="Password" id="SZPassword" maxlength="255" autocomplete="off" />
+            </div>
+            <div class="item item-radio">
+            <input type="checkbox" name="RememberMe" id="RememberMe" />
+            <label for="RememberMe">Remember Me</label>
+            </div>
+            <div class="item">
+            <input type="submit" class="cat_button" value="Log in" />
+            </div>
+            </div>
+            <script type="text/javascript" src="/CatalystScripts/ValidationFunctions.js"></script>
+            <script type="text/javascript">
+						//<![CDATA[
+						function checkWholeForm99915(theForm){var why = "";if (theForm.Username) why += isEmpty(theForm.Username.value, "Username");if (theForm.Password) why += isEmpty(theForm.Password.value, "Password");if (why != ""){alert(why);return false;}theForm.submit();return false;}
+						//]]>
+						</script>
+        </form>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <!-- ========================== Footer Section ========================== -->
+        <div class="clear">&nbsp;</div>
+        <div class="wrap footer-wrap">
+        <div id="footer">
+        <div class="column2">
+        <p class="copyrights">Copyright &copy; 2011 {module_siteurl}, all rights reserved.</p>
+        </div>
+        <!-- ========================== start footer right section========================== -->
+        <div class="column2 last">
+        <div class="logo-footer">
+        <a href="/">
+        <img src="/images/logo-footer.png" alt="Uniquate" />
+        </a>
+        </div>
+        </div>
+        </div>
+        </div>
+        <script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="/js/jquery.tools.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.cycle.all.2.72.js"></script>
+        <script type="text/javascript">
+		var arrowimages={down:['downarrowclass', 'images/down.gif', 13], right:['rightarrowclass', 'images/right.gif']}
+	</script>
+        <script type="text/javascript" src="/js/jqueryslidemenu.js"></script>
+        <script type="text/javascript" src="/js/jquery.prettyPhoto.js"></script>
+        <script type="text/javascript" src="/js/custom.js"></script>
+    </body>
+<!-- InstanceEnd --></html>
