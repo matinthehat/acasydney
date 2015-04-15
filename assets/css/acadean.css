@@ -1,0 +1,56 @@
+.site-header, .site-footer {
+	background: url('../../images/aca_energy.svg') no-repeat top left;
+	background-size: contain;
+  background-color: #fff;
+}
+
+h1 {
+	color: #000;
+}
+.logohead {
+	padding: 10px;
+	width: 100px;
+}
+
+.logofoot {
+	height: 100px;
+}
+
+.head-links {
+	text-align: right;
+	color: #000;
+}
+
+.head-links a {
+	color: #000;
+}
+
+.contact-us {
+  text-align: center;
+  background-color: #ce3e29;
+}
+
+.logotext h1 {
+	padding-top: 20px;
+	padding-left: 10px;
+}
+
+.symbol {
+	color: #000;
+    font-size: 40px;
+}
+.footer-links li, .footer-links li a, .footer-links h5 {
+  color: #000;
+  font-weight: 300;
+  }
+  
+.contact-us:hover {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.top-border {
+	border-top: #7e7e7e solid 1px;
+}
+.main-content {
+	background-color: #fbfbfb;
+}

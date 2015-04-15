@@ -1,0 +1,1 @@
+<li><center>{tag_image_nolink}</center></li>

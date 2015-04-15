@@ -1,0 +1,1 @@
+<div class="large-12 columns slide-text" style="	background-color: rgba(0, 0, 0, 0.77); height: auto; padding: 5px 10px 0px 10px;"><h1 style="color: white;">{tag_slidetext}</h1></div>
