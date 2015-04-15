@@ -1,0 +1,92 @@
+<main class="page checkout-form">
+<div class="section-header">
+<div class="content-container">
+<h2>Checkout</h2>
+</div>
+</div>
+<div class="content-container">
+<div class="cc-card-form">
+<div class="cart">
+<h2>Cart</h2>
+<ul>
+    <li>Stage One <span class="price">$33</span></li>
+    <li>Stage Two <span class="price">$33</span></li>
+    <li>Stage Three <span class="price">$33</span></li>
+    <li>Stage Four <span class="price">$33</span></li>
+</ul>
+<div class="cart-total">
+<h3>Total:</h3>
+<input type="text" name="cartTotal" readonly="readonly" />
+</div>
+</div>
+<div class="card-wrapper"></div>
+<form id="tae-form">
+    <input placeholder="First Name" type="text" name="first-name" id="first-name" />
+    <input placeholder="Last Name" type="text" name="last-name" id="last-name" />
+    <input placeholder="Email Address" type="email" name="email" id="email" />
+    <input placeholder="Card number" name="number" id="number" />
+    <input placeholder="MM/YYYY" type="text" name="expiry" id="expiry" />
+    <input placeholder="CCV" type="text" name="cvc" id="cvc" />
+    <input type="text" name="cartTotal" hidden="true" />
+    <input type="submit" name="submit" value="Pay Now" />
+</form>
+</div>
+</div>
+<script language="javascript" type="text/javascript">
+    $('.cc-card-form form').card({
+      container: $('.card-wrapper'),
+      numberInput: 'input[name="number"]', 
+      expiryInput: 'input[name="expiry"]', 
+      cvcInput: 'input[name="cvc"]', 
+      nameInput: 'input[name="first-name"], input[name="last-name"]',
+    });
+  </script>
+<div style="display: none;" class="shop-checkout shop-form">
+<form id="catwebformform42059" name="catwebformform42059" onsubmit="return checkWholeForm42059(this)" action="/FormProcessv2.aspx?WebFormID=10850&amp;OID={module_oid}&amp;OTYPE={module_otype}&amp;EID={module_eid}&amp;CID={module_cid}" method="post" enctype="multipart/form-data">
+    <!-- USER DETAILS -->
+    <input class="cat_textbox" id="FirstName" type="text" maxlength="255" name="FirstName" />
+    <input class="cat_textbox" id="LastName" type="text" maxlength="255" name="LastName" />
+    <input class="cat_textbox" id="EmailAddress" type="text" maxlength="255" name="EmailAddress" />
+    <!-- PAYMENT METHOD: Credit Card -->
+    <input class="PaymentMethodType" type="radio" checked="true" value="1" name="PaymentMethodType" hidden="true" /><!-- CREDIT CARD PAYMENT METHOD -->
+    <!-- CREDIT CARD DETAILS -->
+    <input class="cat_textbox" id="CardName" type="text" name="CardName" />
+    <input class="cat_textbox" id="CardNumber" type="text" name="CardNumber" />
+    <input type="text" id="CardExpiryMonth" name="CardExpiryMonth" value="1" /> <!-- Values 1-12 -->
+    <input type="text" id="CardExpiryYear" name="CardExpiryYear" value="2014" /> <!-- Values full year 4digits -->
+    <input type="text" id="CardType" name="CardType" value="1" /> <!-- Value { 1: Visa, 2: Master Card, 3: Bank Card, 4: AMEX, 5: Dinners, 6: JCB -->
+    <input class="cat_textbox" id="CardCCV" type="text" name="CardCCV" />
+    <input class="cat_textbox" id="Amount" type="text" name="Amount" placeholder="amount" />
+    <script type="text/javascript" src="/CatalystScripts/ValidationFunctions.js"></script>
+    <script language="javascript" type="text/javascript">
+        //<![CDATA[
+        var submitcount42059 = 0;
+        function checkWholeForm42059(theForm){
+          var why = "";
+          if (theForm.FirstName) why += isEmpty(theForm.FirstName.value, "First Name");
+          if (theForm.LastName) why += isEmpty(theForm.LastName.value, "Last Name");
+          if (theForm.EmailAddress) why += checkEmail(theForm.EmailAddress.value);
+          if (!theForm.PaymentMethodType || getRadioSelected(theForm.PaymentMethodType) == 1) {
+            if (theForm.CardName) why += isEmpty(theForm.CardName.value, "Name on Card");
+            if (theForm.CardNumber) why += isNumeric(theForm.CardNumber.value, "Card Number");
+            if (theForm.Amount) why += isCurrency(theForm.Amount.value, "Amount");
+          } 
+          if (theForm.PaymentMethodType) why += checkSelected(theForm.PaymentMethodType, "Payment Method");
+          if(why != ""){
+            alert(why);
+            return false;
+          }
+          if(submitcount42059 == 0){
+            submitcount42059++;theForm.submit();
+            return false;
+          }else{
+            alert("Form submission is in progress.");
+            return false;
+          }
+        }
+        //]]>
+      </script>
+</form>
+</div>
+</main>
+<img alt="GlobalSign SSL Site Seal" src="/CatalystImages/globalsign-ssl-site-seal.gif" class="hide" />

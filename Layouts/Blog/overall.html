@@ -1,0 +1,49 @@
+<div class="mid-column">
+
+	<div class="grid8 first">
+		<h2>{tag_blogtitle}</h2>
+		<p class="description">{tag_blogdescription}</p>
+
+		<div class="content-column">
+			{tag_postlist}
+		</div>
+		
+		<p class="page-nav">{tag_previouspage} {tag_pagination} {tag_nextpage}<p>
+	</div>
+
+	<div class="grid4 widget-area">
+		<div class="sidebar">
+			<ul class="sidebar-inner">
+				<li id="nav_menu-3" class="widget-container widget_nav_menu">
+					<h3>Categories</h3>
+					<div class="menu-blog-cats-container">
+						{tag_blogcategorylist}
+					</div>
+				</li>
+			   
+				<li class="widget-container widget_archive">
+					<h3>Archives</h3>	
+					{tag_blogpostarchive}
+				</li>
+
+				<li>
+					<h3>Recent posts</h3>
+					{tag_blogrecentpost}
+				</li>
+
+				<li>
+					<h3>Tag cloud</h3>
+					{tag_blogtagcloud}
+				</li>
+
+				<li class="widget-container widget_calendar">
+					<h3>Calender</h3>
+					<div id="calendar_wrap">
+						{tag_blogcalendar}
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+</div>

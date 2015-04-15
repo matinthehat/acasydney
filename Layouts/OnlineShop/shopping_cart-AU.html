@@ -1,0 +1,51 @@
+<div class="section-header">
+<div class="content-container">
+<h2>Shopping Cart</h2>
+</div>
+</div>
+<div class="content-container">
+<div class="shop-cart">
+<table class="cart">
+    <tbody>
+        <tr class="var">
+            <th>Product</th>
+            <th>Price</th>
+            <th class="quantity">Quantity</th>
+            <th>Total</th>
+            <th>Remove</th>
+        </tr>
+        <tr class="val">
+            <td>{tag_productname}</td>
+            <td>{tag_productextaxamount}</td>
+            <td class="quantity">{tag_productquantity}</td>
+            <td>{tag_producttotal}</td>
+            <td>{tag_productremovelink}</td>
+        </tr>
+        <tr class="sub-total">
+            <td colspan="2">Sub-Total</td>
+            <td class="quantity">{tag_totalunits} units</td>
+            <td>{tag_productgrandtotal}</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr class="discount">
+            <td>Discount</td>
+            <td colspan="2" class="quantity">{tag_discountcode}<input class="update" onclick="return false;" type="button" value="Update" /></td>
+            <td>({tag_invoicediscountamount})</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr class="total">
+            <td colspan="2"><strong>Total</strong></td>
+            <td>&nbsp;</td>
+            <td><strong>{tag_invoicetotal}</strong></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="6">&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="actions" colspan="6"> {tag_clearcartbutton,<img alt="" src="/CatalystImages/shop_clearcart.png" />} {tag_buybutton,<img alt="" src="/CatalystImages/shop_checkout.png" />}</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</div>

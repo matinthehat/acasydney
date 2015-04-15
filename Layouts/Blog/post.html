@@ -1,0 +1,70 @@
+<div class="post hentry">
+	<h2 class="entry-title">{tag_blogposttitle_nolink}</h2>
+	<div class="entry-meta">
+		<p class="postmetadata"> 
+			<span class="meta-prep meta-prep-author">Posted on</span> 
+			<span class="entry-date">{tag_blogpostdate}</span>
+			<span class="meta-sep">by</span> <span class="author vcard">{tag_blogpostauthor}</span> &nbsp; 
+			<!--<span class="blog-cat">Posted in {tag_blogpostcategory}</span>-->
+		</p>
+	</div>
+  <div class="social">
+{module_facebooklike, url="{tag_itemurl_withhost}", width="100", showFaces="false"}
+{module_twittertweet, url="{tag_itemurl_withhost}"}
+</div>
+
+	<div class="entry-content">
+		{tag_blogpostbody}
+	</div>
+</div>
+
+<div id="comments">
+    
+	{tag_commentspaged}
+
+	<div id="respond">
+		<h3 id="reply-title">Leave a Reply</h3>
+		<form onsubmit="return checkWholeForm(this)" action="/RatingProcess.aspx?OID={tag_blogpostid}&amp;OTYPE={tag_blogposttype}" method="post" id="commentform">
+			<p class="comment-form-author">
+				<label> Name (optional)</label>
+				<input maxlength="255" name="fullname" />
+			</p>
+			<p class="comment-form-url">
+				<label> Website (optional)</label>
+				<input maxlength="255" name="website">
+			</p>
+			<p class="comment-form-email">
+				<label> Email Address (optional)</label>
+				<input maxlength="255" name="emailaddress" />
+			</p>
+
+			<div class="item">
+				<label> Enter Word Verification in box below</label>
+				{module_captchav2}
+			</div>
+
+			<p class="comment-form-comment">
+				<label> Your comment</label>
+				<textarea name="Feedback" rows="5" cols="15"></textarea>
+			</p>
+
+			<p class="form-submit">
+				<input type="submit" value="Post Comment" id="submit"/>
+			</p>
+
+			<script type="text/javascript" src="/CatalystScripts/ValidationFunctions.js"></script>
+			<script type="text/javascript">
+			//<![CDATA[
+			function checkWholeForm(theForm) {
+			var why = "";
+			if (theForm.EmailAddress) if (theForm.EmailAddress.value.length > 0) why += checkEmail(theForm.EmailAddress.value);
+			if (theForm.CaptchaV2) why += isEmpty(theForm.CaptchaV2.value, "Enter Word Verification in box below");
+			if (why != "") { alert(why); return false; }
+			return true;
+			}
+			//]]>
+			</script>
+		</form>
+	</div>
+</div>
+
