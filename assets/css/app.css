@@ -1,5 +1,5 @@
-h1, h2, h3, h4, h5, h6, p, a {
-  font-family: "ff-dax-web-pro",sans-serif;
+html, body, h1, h2, h3, h4, h5, h6, p, a, ul {
+  font-family: "ff-netto-web",sans-serif;
   }
   
 .site-header, .site-footer {
@@ -113,4 +113,52 @@ a.symbol:before {
     font-size: 40px;
 }
 
+.side-box-title {
+	background-color: #000000;
+	background-image: url('/images/aca_energy_bg.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding: 5px;
+}
 
+.side-box-title h2, .side-box-title h4, .side-box-title a {
+	color: white;
+}
+
+.side-box-content {
+	padding: 5px;
+	background-color: #eee;
+}
+
+.list-box-title {
+	background-color: #000000;
+	background-image: url('/images/aca_energy_bg.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding: 5px;
+}
+
+.list-box-title h2, .list-box-title h4, .list-box-title a {
+	color: white;
+}
+
+.app-list-box-content {
+	padding: 10px;
+	background-color: #eee;
+}
+
+
+.circle {
+	    background-repeat: no-repeat;
+	    background-size: cover;
+    background-position: 50%;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 4px solid white;
+}
+.shadow {
+	box-shadow: 3px 3px 3px #888888;
+}

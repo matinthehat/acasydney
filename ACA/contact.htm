@@ -4,11 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- InstanceBeginEditable name="doctitle" --><title></title><!-- InstanceEndEditable --><!-- InstanceBeginEditable name="head" -->
+        
 
-
-<!-- InstanceEndEditable -->
-  <link rel="stylesheet" href="../assets/css/lib/foundation.min.css" />
-  <link rel="stylesheet" href="../assets/css/app.css" />
+    <!-- InstanceEndEditable -->
+   <script src="//use.typekit.net/wrj2jaj.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+  <link rel="stylesheet" href="/assets/css/lib/foundation.min.css" />
+  <link rel="stylesheet" href="/assets/css/app.css" />
   <link rel="stylesheet" type="text/css" href="../assets/slick/slick.css"/>
   <!--<link rel="stylesheet" type="text/css" href="../assets/slick/slick-theme1.css"/>--> 
   
@@ -46,81 +48,86 @@
   <!-- end header -->
   <!-- start main -->
   <main>
-    <!-- InstanceBeginEditable name="ContentArea" --><h2>Contact</h2>
+    <!-- InstanceBeginEditable name="ContentArea" -->
+        <h2>contact</h2>
+        <div class="contact-us">
+            <form name="catwebformform14090" method="post" onsubmit="return checkWholeForm14090(this)" enctype="multipart/form-data" action="/FormProcessv2.aspx?WebFormID=10090&amp;OID={module_oid}&amp;OTYPE={module_otype}&amp;EID={module_eid}&amp;CID={module_cid}" id="contactForm">
+                <div class="form"> <span class="req">*</span> Required
+                    <div class="item">
+                        <label for="Title">Title</label>
+                        <select name="Title" id="Title" class="cat_dropdown_smaller">
+                            <option value="336239">DR</option>
+                            <option value="336238">MISS</option>
+                            <option value="336235" selected="selected">MR</option>
+                            <option value="336236">MRS</option>
+                            <option value="336237">MS</option>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label for="FirstName">First Name <span class="req">*</span>
+                        </label>
+                        <input type="text" name="FirstName" id="FirstName" class="cat_textbox" maxlength="255"> </div>
+                    <div class="item">
+                        <label for="LastName">Last Name <span class="req">*</span>
+                        </label>
+                        <input type="text" name="LastName" id="LastName" class="cat_textbox" maxlength="255"> </div>
+                    <div class="item">
+                        <label for="EmailAddress">Email Address <span class="req">*</span>
+                        </label>
+                        <input type="text" name="EmailAddress" id="EmailAddress" class="cat_textbox" maxlength="255"> </div>
+                    <div class="item">
+                        <label for="HomePhone">Home Phone Number <span class="req">*</span>
+                        </label>
+                        <input type="text" name="HomePhone" id="HomePhone" class="cat_textbox" maxlength="255"> </div>
+                    <div class="item">
+                        <label for="CellPhone">Cell Phone Number <span class="req">*</span>
+                        </label>
+                        <input type="text" name="CellPhone" id="CellPhone" class="cat_textbox" maxlength="255"> </div>
+                    <div class="item">
+                        <label for="WebAddress">Web Address <span class="req">*</span>
+                        </label>
+                        <input type="text" name="WebAddress" id="WebAddress" class="cat_textbox" maxlength="255"> </div>
+                    <div class="item">
+                        <label>Preferred Contact Method</label>
+                        <input type="radio" name="CAT_Custom_868" id="CAT_Custom_868_0" value="Phone" class="item-radio">Phone
+                        <input type="radio" name="CAT_Custom_868" id="CAT_Custom_868_1" value="Email" class="item-radio">Email </div>
+                    <div class="item">
+                        <label for="CAT_Custom_869">Comments/Enquiries</label>
+                        <textarea name="CAT_Custom_869" id="CAT_Custom_869" cols="10" rows="5" class="cat_listbox" onkeydown="if(this.value.length>=1024)this.value=this.value.substring(0,1023);"></textarea>
+                    </div>
+                    <div class="item">
+                        <input name="submit" value="Send Message" type="submit" class="submit"> </div>
+                    <script type="text/javascript" src="/CatalystScripts/ValidationFunctions.js"></script>
+                    <script type="text/javascript">
+                        //<![CDATA[
+                        var submitcount14090 = 0;
 
-<div class="contact-us">
-	<form name="catwebformform14090" method="post" onsubmit="return checkWholeForm14090(this)" enctype="multipart/form-data" action="/FormProcessv2.aspx?WebFormID=10090&amp;OID={module_oid}&amp;OTYPE={module_otype}&amp;EID={module_eid}&amp;CID={module_cid}" id="contactForm">
-		<div class="form">
-
-			<span class="req">*</span>  Required
-
-			<div class="item">
-				<label for="Title">Title</label>
-				<select name="Title" id="Title" class="cat_dropdown_smaller">
-					<option value="336239">DR</option>
-					<option value="336238">MISS</option>
-					<option value="336235" selected="selected">MR</option>
-					<option value="336236">MRS</option>
-					<option value="336237">MS</option>
-				</select>
-			</div>
-			
-			<div class="item">
-				<label for="FirstName">First Name <span class="req">*</span></label>
-				<input type="text" name="FirstName" id="FirstName" class="cat_textbox" maxlength="255" />
-			</div>
-			
-			<div class="item">
-				<label for="LastName">Last Name <span class="req">*</span></label>
-				<input type="text" name="LastName" id="LastName" class="cat_textbox" maxlength="255" />
-			</div>
-			
-			<div class="item">
-				<label for="EmailAddress">Email Address <span class="req">*</span></label>
-				<input type="text" name="EmailAddress" id="EmailAddress" class="cat_textbox" maxlength="255" />
-			</div>
-			
-			<div class="item">
-				<label for="HomePhone">Home Phone Number <span class="req">*</span></label>
-				<input type="text" name="HomePhone" id="HomePhone" class="cat_textbox" maxlength="255" />
-			</div>
-			
-			<div class="item">
-				<label for="CellPhone">Cell Phone Number <span class="req">*</span></label>
-				<input type="text" name="CellPhone" id="CellPhone" class="cat_textbox" maxlength="255" />
-			</div>
-			
-			<div class="item">
-				<label for="WebAddress">Web Address <span class="req">*</span></label>
-				<input type="text" name="WebAddress" id="WebAddress" class="cat_textbox" maxlength="255" />
-			</div>
-			
-			<div class="item">
-				<label>Preferred Contact Method</label>
-				<input type="radio" name="CAT_Custom_868" id="CAT_Custom_868_0" value="Phone" class="item-radio" />Phone
-				<input type="radio" name="CAT_Custom_868" id="CAT_Custom_868_1" value="Email" class="item-radio" />Email
-			</div>
-			
-			<div class="item">
-				<label for="CAT_Custom_869">Comments/Enquiries</label>
-				<textarea name="CAT_Custom_869" id="CAT_Custom_869" cols="10" rows="5" class="cat_listbox" onkeydown="if(this.value.length&gt;=1024)this.value=this.value.substring(0,1023);"></textarea>
-			</div>
-
-			<div class="item">
-				<input name="submit" value="Send Message" type="submit" class="submit" />
-			</div>
-					
-			<script type="text/javascript" src="/CatalystScripts/ValidationFunctions.js"></script>
-			<script type="text/javascript">
-			//<![CDATA[
-			var submitcount14090 = 0;function checkWholeForm14090(theForm){var why = "";if (theForm.FirstName) why += isEmpty(theForm.FirstName.value, "First Name");if (theForm.LastName) why += isEmpty(theForm.LastName.value, "Last Name"); if (theForm.EmailAddress) why += checkEmail(theForm.EmailAddress.value); if (theForm.HomePhone) why += isEmpty(theForm.HomePhone.value, "Home Phone Number"); if (theForm.CellPhone) why += isEmpty(theForm.CellPhone.value, "Cell Phone Number"); if(why != ""){alert(why);return false;}if(submitcount14090 == 0){submitcount14090++;theForm.submit();return false;}else{alert("Form submission is in progress.");return false;}}
-			//]]>
-			</script>
-		</div>
-	</form>
-</div>
-
-<!-- InstanceEndEditable -->
+                        function checkWholeForm14090(theForm) {
+                                var why = "";
+                                if (theForm.FirstName) why += isEmpty(theForm.FirstName.value, "First Name");
+                                if (theForm.LastName) why += isEmpty(theForm.LastName.value, "Last Name");
+                                if (theForm.EmailAddress) why += checkEmail(theForm.EmailAddress.value);
+                                if (theForm.HomePhone) why += isEmpty(theForm.HomePhone.value, "Home Phone Number");
+                                if (theForm.CellPhone) why += isEmpty(theForm.CellPhone.value, "Cell Phone Number");
+                                if (why != "") {
+                                    alert(why);
+                                    return false;
+                                }
+                                if (submitcount14090 == 0) {
+                                    submitcount14090++;
+                                    theForm.submit();
+                                    return false;
+                                } else {
+                                    alert("Form submission is in progress.");
+                                    return false;
+                                }
+                            }
+                            //]]>
+                    </script>
+                </div>
+            </form>
+        </div>
+    <!-- InstanceEndEditable -->
   </main>
   <!-- end main -->
   <footer>
