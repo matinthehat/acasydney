@@ -113,8 +113,4 @@ a.symbol:before {
     font-size: 40px;
 }
 
-.slider-text {
-	position: absolute;
-	position-anchor: 100% 50%;
-}
 
